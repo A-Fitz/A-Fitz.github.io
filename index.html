@@ -137,12 +137,13 @@
 				Or even just say hello?<br>
 				No matter what, contact me here.<br>
 				<div class="form">
-					<form action="form-to-email.php" class="form" id="hello-form" method="post" name="hello-form">
+					<form action="https://formspree.io/your@email.com" class="form" id="hello-form" method="post" name="hello-form">
+						<input type="text" name="_gotcha" style="display:none" />
 						<div>
 							<input class="form-field" name="name" placeholder="Name" type="text" value=""><br>
 						</div>
 						<div>
-							<input class="form-field" name="email" placeholder="Email" type="text" value=""><br>
+							<input class="form-field" name="_replyto" placeholder="Email" type="text" value=""><br>
 						</div>
 						<div>
 							<textarea class="form-msg" name="message" placeholder="Message" required=""></textarea>
