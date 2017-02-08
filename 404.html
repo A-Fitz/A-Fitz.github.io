@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 - Page Not Found</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="assets/js/main.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+	</script>
+	<link href="favicon.ico" rel="shortcut icon">
+</head>
+<body onload="DelayRedirect()">
+	<div class="header">
+		<div class="content"><img alt="FitzGerald Web Development" src="assets/img/logo.png"></div>
+	</div>
+	<div class="line"></div>
+	<div class="about">
+		<div class="bigtext">404</div>
+
+<div id="CountDown" class="midtext">Page not found, you will be redirected in <span id = "Count"></span>&nbsp;seconds.</div>
+
+<script type="text/javascript">
+function DelayRedirect() {
+    var seconds = 6;
+    var CountDown = document.getElementById("CountDown");
+    var Count = document.getElementById("Count");
+    CountDown.style.display = "block";
+    Count.innerHTML = seconds;
+    setInterval(function () {
+        seconds--;
+        Count.innerHTML = seconds;
+        if (seconds == 0) {
+            CountDown.style.display = "none";
+            window.location = "http://afitz.me";
+        }
+    }, 1000);
+}
+</script>
+		
+	</div>
+	<div class="line"></div>
+	<div class="content">
+		<div class="footer">
+			<div class="item cell">
+				<div class="phone">
+					(&#054;&#051;&#048;)&#045;&#057;&#053;&#054;&#045;&#054;&#054;&#048;&#050;
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="item cell">
+				<div class="copy">
+					&copy; 2017 Austin FitzGerald
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="item cell" style="width:400px;">
+				<div class="email">
+					&#097;&#102;&#105;&#116;&#051;&#049;&#050;&#056;&#064;&#099;&#115;&#100;&#057;&#057;&#046;&#111;&#114;&#103;
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/galleries.js">
+	</script>
+</body>
+</html>
