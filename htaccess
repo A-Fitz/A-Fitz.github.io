@@ -1,0 +1,15 @@
+RewriteEngine on
+
+ErrorDocument 404 /404.php
+
+Options -Indexes
+
+<Files ~ “^.*\.([Hh][Tt][Aa])”>
+order allow,deny
+deny from all
+satisfy all
+</Files>
+
+<IfModule mod_suphp.c> 
+suPHP_ConfigPath /home/dgnpdcqz/public_html 
+</IfModule>
