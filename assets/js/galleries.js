@@ -80,4 +80,4 @@ $('#g3').magnificPopup({
     
   }
 });
-$('#g2').css('background-image', 'url(./assets/albums/g3/thumb.png)');
+$('#g3').css('background-image', 'url(./assets/albums/g3/thumb.png)');
