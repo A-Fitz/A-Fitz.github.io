@@ -81,3 +81,26 @@ $('#g3').magnificPopup({
   }
 });
 $('#g3').css('background-image', 'url(./assets/albums/g3/thumb.png)');
+
+$('#g4').magnificPopup({
+    items: [
+      {
+        src: './assets/albums/g4/1.png'
+      },
+      {
+        src: './assets/albums/g4/2.gif'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image',
+  callbacks: {
+    
+    buildControls: function() {
+      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+    }
+    
+  }
+});
+$('#g4').css('background-image', 'url(./assets/albums/g4/thumb.png)');
