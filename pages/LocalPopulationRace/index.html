@@ -16,6 +16,8 @@
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">aFitz</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#" id="population">Population</a></li>
+        <li><a href="#" id="africanamerican">African American</a></li>
+        <li><a href="#" id="hispanic">Hispanic</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -124,6 +126,12 @@
       $(document).ready(function(){
   $("#population").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
+  });
+          $("#africanamerican").click(function(){
+    $("#graph").load('http://afitz.me/pages/LocalPopulationRace/africanamerican.html');
+  });
+          $("#hispanic").click(function(){
+    $("#graph").load('http://afitz.me/pages/LocalPopulationRace/hispanic.html');
   });
 });
     </script>
