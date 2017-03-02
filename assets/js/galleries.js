@@ -126,4 +126,4 @@ $('#g5').magnificPopup({
     
   }
 });
-$('#g4').css('background-image', 'url(./assets/albums/g5/thumb.png)');
+$('#g5').css('background-image', 'url(./assets/albums/g5/thumb.png)');
