@@ -104,3 +104,26 @@ $('#g4').magnificPopup({
   }
 });
 $('#g4').css('background-image', 'url(./assets/albums/g4/thumb.png)');
+
+$('#g5').magnificPopup({
+    items: [
+      {
+        src: './assets/albums/g5/1.png'
+      },
+      {
+        src: './assets/albums/g5/2.png'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image',
+  callbacks: {
+    
+    buildControls: function() {
+      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+    }
+    
+  }
+});
+$('#g4').css('background-image', 'url(./assets/albums/g5/thumb.png)');
