@@ -5,7 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport">
     <title>Local Population &amp; Race</title>
-    <!--<link href="style.css" rel="stylesheet">-->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
 <body>
     <nav class="teal" role="navigation">
         <div class="nav-wrapper container">
-            <a class="brand-logo" href="#" id="logo-container">aFitz</a>
+            <a class="brand-logo" href="http://afitz.me" id="logo-container">aFitz</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#" id="population">Population Growth</a></li>
                 <li><a href="#" id="africanamerican">African American</a></li>
@@ -40,33 +40,14 @@
             <div class="row center" id="data"></div>
         </div>
     </div>
-    <footer class="page-footer orange">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
+    <footer class="page-footer amber-lighten-1">
+    <div class="container">
+        <div class="section">
+            <div class="row center">Sources: https://www.census.gov/prod/www/decennial.html
+                Note: Woodridge data from 1960-1970 is incomplete
+because the village was formed in only 1959.</div>
         </div>
+    </div>
         <div class="footer-copyright">
             <div class="container">
                 CSS Libraries: <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a> &amp; <a class="orange-text text-lighten-3" href="http://chartjs.org/">ChartJS</a>
@@ -84,7 +65,7 @@
             $("#graph").animate({
                 opacity: 0
             }, 1);
-            $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
+            $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/population.html');
             $("#graph").animate({
                 opacity: 1
             }, 3000);
@@ -100,17 +81,17 @@
         });
         $(document).ready(function() {
             $("#population").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
+                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/population.html');
                 $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/population.html');
                 $("#title").text('Population Growth');
             });
             $("#africanamerican").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/africanamerican.html');
+                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/africanamerican.html');
                 $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/africanamerican.html');
                 $("#title").text('African American Population');
             });
             $("#hispanic").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/hispanic.html');
+                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/hispanic.html');
                 $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/hispanic.html');
                 $("#title").text('Hispanic Population');
             });
