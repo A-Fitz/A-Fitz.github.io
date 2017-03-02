@@ -33,7 +33,7 @@
       <br><br>
       <h1 class="header center amber-text text-lighten-1">Population Growth</h1>
       <div class="row center" id="graph">
-       <!--graph inserted-->
+       <script>$("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');</script>
       </div>
       <br><br>
 
@@ -124,7 +124,6 @@
     
         <script>
       $(document).ready(function(){
-        $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
   $("#population").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
   });
