@@ -15,13 +15,15 @@
 <nav class="teal" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">aFitz</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" id="population">Population</a></li>
+        <li><a href="#" id="population">Population Growth</a></li>
         <li><a href="#" id="africanamerican">African American</a></li>
         <li><a href="#" id="hispanic">Hispanic</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#" id="population">Population Growth</a></li>
+        <li><a href="#" id="africanamerican">African American</a></li>
+        <li><a href="#" id="hispanic">Hispanic</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -29,12 +31,9 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center amber-text text-lighten-1">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
+      <h1 class="header center amber-text text-lighten-1">Population Growth</h1>
       <div class="row center" id="graph">
-        test
+        If you are seeing this, the graph did not load.
       </div>
       <br><br>
 
@@ -125,6 +124,7 @@
     
         <script>
       $(document).ready(function(){
+        $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
   $("#population").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
   });
