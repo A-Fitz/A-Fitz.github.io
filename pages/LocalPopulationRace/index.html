@@ -105,14 +105,17 @@ $("#data").animate({opacity: 1},3000);
       $(document).ready(function(){
   $("#population").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
+    $("#data").load('http://afitz.me/pages/LocalPopulationRace/population.html');
     $("#title").text('Population Growth');
   });
           $("#africanamerican").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/africanamerican.html');
+    $("#data").load('http://afitz.me/pages/LocalPopulationRace/africanamerican.html');
     $("#title").text('African American Population');
   });
           $("#hispanic").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/hispanic.html');
+            $("#data").load('http://afitz.me/pages/LocalPopulationRace/hispanic.html');
     $("#title").text('Hispanic Population');
   });
 });
