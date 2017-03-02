@@ -31,7 +31,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center amber-text text-lighten-1">Population Growth</h1>
+      <h1 id="title" class="header center amber-text text-lighten-1">Population Growth</h1>
       <div class="row center" id="graph">
        
       </div>
@@ -133,12 +133,15 @@ $("#graph").animate({opacity: 1},3000);
       $(document).ready(function(){
   $("#population").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/population.html');
+    $("#title").text('Population Growth');
   });
           $("#africanamerican").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/africanamerican.html');
+    $("#title").text('African American Population');
   });
           $("#hispanic").click(function(){
     $("#graph").load('http://afitz.me/pages/LocalPopulationRace/hispanic.html');
+    $("#title").text('Hispanic Population');
   });
 });
     </script>
