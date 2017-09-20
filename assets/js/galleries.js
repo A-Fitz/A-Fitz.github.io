@@ -150,3 +150,29 @@ $('#g6').magnificPopup({
   }
 });
 $('#g6').css('background-image', 'url(./assets/albums/g6/thumb.png)');
+
+$('#g7').magnificPopup({
+    items: [
+      {
+        src: './assets/albums/g7/1.png'
+      },
+      {
+        src: './assets/albums/g7/2.png'
+      },
+      {
+        src: './assets/albums/g7/3.png'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image',
+  callbacks: {
+    
+    buildControls: function() {
+      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+    }
+    
+  }
+});
+$('#g7').css('background-image', 'url(./assets/albums/g7/thumb.png)');
