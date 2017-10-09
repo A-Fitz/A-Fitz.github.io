@@ -57,7 +57,7 @@ function DecodeHelper(c) {
 	//if character is number, subtract 3 ascii positions
 	//if that makes it less than 0, add ten to balance it
 	if ('0' <= c && c <= '9') {
-		asciiPos -= 4;
+		asciiPos -= 3;
 		if (asciiPos < '0'.charCodeAt(0)) {
 			asciiPos += 10;
 		}
