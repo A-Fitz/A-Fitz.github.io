@@ -187,6 +187,9 @@ $('#g8').magnificPopup({
       },
       {
         src: './assets/albums/g8/3.png'
+      },
+      {
+        src: './assets/albums/g8/4.png'
       }
     ],
     gallery: {
