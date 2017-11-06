@@ -212,16 +212,7 @@ $('#g9').magnificPopup({
         src: './assets/albums/g9/1.png'
       }
     ],
-    gallery: {
-      enabled: true
-    },
+   
     type: 'image',
-  callbacks: {
-    
-    buildControls: function() {
-      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
-    }
-    
-  }
 });
 $('#g9').css('background-image', 'url(./assets/albums/g9/thumb.png)');
