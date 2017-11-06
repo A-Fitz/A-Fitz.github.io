@@ -205,3 +205,23 @@ $('#g8').magnificPopup({
   }
 });
 $('#g8').css('background-image', 'url(./assets/albums/g8/thumb.png)');
+
+$('#g9').magnificPopup({
+    items: [
+      {
+        src: './assets/albums/g9/1.png'
+      }
+    ],
+    gallery: {
+      enabled: true
+    },
+    type: 'image',
+  callbacks: {
+    
+    buildControls: function() {
+      this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+    }
+    
+  }
+});
+$('#g9').css('background-image', 'url(./assets/albums/g9/thumb.png)');
