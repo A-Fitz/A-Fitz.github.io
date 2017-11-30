@@ -88,26 +88,29 @@
                                      newprice = (data[key2]) * 0.01;
                                  })
                                  .done(function() {
+                                
+                                
                                      console.log("oldprice: " + oldprice);
                                      console.log("newprice: " + newprice);
+                                
+                                     var variable = newprice/oldprice;
+                                     console.log("percent: " + variable);
          
                                      var amount = $('#amount').val();
                                      console.log("amount: " + amount);
-         
-                                     var oldbtc = amount;
+                                
+                                     var oldbtc = amount / oldprice;
                                      console.log("oldbtc: " + oldbtc);
          
-                                     var oldusd = amount * oldprice;
-                                     var newusd = amount * newprice;
-         
-                                     var temp = newusd - oldusd;
+                                     var newusd = amount / newprice;
+                                     console.log("newusd: " + newusd);
          
          
-                                     var output = temp / newprice;
+                                     var output = amount * variable;
                                      console.log("output: " + output);
          
-                                     $('#total').text(output);
-                                     $('#total2').text(output * newprice);
+                                     $('#total').text(output / newprice);
+                                     $('#total2').text(output);
                                  })
          
                          });
