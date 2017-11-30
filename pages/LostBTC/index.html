@@ -128,9 +128,9 @@
                                      var amount = $('#amount').val();
                                      console.log("amount: " + amount);
          
-                                     var oldbtc = oldprice / amount;
+                                     var oldbtc = amount / oldprice;
                                      console.log("oldbtc: " + oldbtc);
-                                     var newbtc = newprice / amount;
+                                     var newbtc = amount / newprice;
                                      console.log("newbtc: " + newbtc);
          
                                      var output = newbtc - oldbtc;
