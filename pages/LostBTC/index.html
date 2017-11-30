@@ -80,7 +80,7 @@
                  if (val === "BTC") {
                      $.get("https://winkdex.com/api/v0/price?time=" + (unix), function(data) {
                              var key1 = "price";
-                             oldprice = data[key1] * 0.01;
+                             oldprice = (data[key1]) * 0.01;
                          })
                          .done(function() {
                              $.get("https://winkdex.com/api/v0/price?time=", function(data) {
