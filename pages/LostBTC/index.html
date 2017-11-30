@@ -88,7 +88,41 @@
                                      newprice = (data[key2]) * 0.01;
                                  })
                                  .done(function() {
-                                
+                                     console.log("oldprice: " + oldprice);
+                                     console.log("newprice: " + newprice);
+         
+                                     var amount = $('#amount').val();
+                                     console.log("amount: " + amount);
+         
+                                     var oldbtc = amount;
+                                     console.log("oldbtc: " + oldbtc);
+         
+                                     var oldusd = amount * oldprice;
+                                     var newusd = amount * newprice;
+         
+                                     var temp = newusd - oldusd;
+         
+         
+                                     var output = temp / newprice;
+                                     console.log("output: " + output);
+         
+                                     $('#total').text(output);
+                                     $('#total2').text(output * newprice);
+                                 })
+         
+                         });
+                 } else if (val === "USD") {
+                     $.get("https://winkdex.com/api/v0/price?time=" + (unix), function(data) {
+                             var key1 = "price";
+                             oldprice = data[key1] * 0.01;
+                         })
+                         .done(function() {
+                             $.get("https://winkdex.com/api/v0/price?time=", function(data) {
+                                     var key2 = "price";
+                                     newprice = (data[key2]) * 0.01;
+                                 })
+                                 .done(function() {
+
                                 
                                      console.log("oldprice: " + oldprice);
                                      console.log("newprice: " + newprice);
@@ -111,36 +145,6 @@
          
                                      $('#total').text(output / newprice);
                                      $('#total2').text(output);
-                                 })
-         
-                         });
-                 } else if (val === "USD") {
-                     $.get("https://winkdex.com/api/v0/price?time=" + (unix), function(data) {
-                             var key1 = "price";
-                             oldprice = data[key1] * 0.01;
-                         })
-                         .done(function() {
-                             $.get("https://winkdex.com/api/v0/price?time=", function(data) {
-                                     var key2 = "price";
-                                     newprice = (data[key2]) * 0.01;
-                                 })
-                                 .done(function() {
-                                     console.log("oldprice: " + oldprice);
-                                     console.log("newprice: " + newprice);
-         
-                                     var amount = $('#amount').val();
-                                     console.log("amount: " + amount);
-         
-                                     var oldbtc = amount / oldprice;
-                                     console.log("oldbtc: " + oldbtc);
-                                     var newbtc = amount / newprice;
-                                     console.log("newbtc: " + newbtc);
-         
-                                     var output = newbtc - oldbtc;
-                                     console.log("output: " + output);
-         
-                                     $('#total').text(output);
-                                     $('#total2').text(output * newprice);
                                  })
          
                          });
