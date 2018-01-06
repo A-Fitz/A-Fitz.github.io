@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang='en' class=''>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+<style class="cp-pen-styles">
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+body {
+  padding:50px;
+}
+.header {
+  text-align:center;
+  font-size:300%;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Bad Script', cursive;
+  color:#8195AA;
+}
+.input-bg {
+  margin:0 auto;
+  width:60%; 
+}
+.input-bg .input {
+  width:100%;
+  height: 70px;
+  font-size:200%;
+  font-family:'Titillium Web', sans-serif;
+  text-align:center;
+  border-radius:15px;
+}
+#result {
+  text-align:center;
+  font-size:150%;
+ font-family:'Titillium Web', sans-serif;
+  padding:20px;
+}
+</style>
+</head>
+<body>
+
+<textarea rows="6" cols="70" id="in" placeholder="Enter text..."></textarea>
+
+<br><br>
+
+<div id="arrow">&darr;</div>
+
+<br><br>
+
+<button id="copy">Copy</button>
+<br>
+<textarea rows="12" cols="70" id="out" readonly></textarea>
+
+<script>
+
+var numStr = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+
+function convert(input) {
+    return input.toLowerCase()
+        .replace(/\s/g, "   ")
+        .replace(/([a-z])/g, ":regional_indicator_$1: ")
+        .replace(/([0-9])/g, function ($1) {
+            return ":" + numStr[$1] + ": ";
+        });
+}
+
+
+$(document).ready(function(){
+
+    $('#in').on('change keyup paste', function (e) {
+        $('#out').val(convert($("#in").val()));
+    });
+
+    $('#copy').click(function () {
+        $('#out').select();
+        document.execCommand('copy');
+    });
+
+});
+</script>
+
+</body>
+
+</html>
