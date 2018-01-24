@@ -13,7 +13,7 @@
 <body>
     <nav class="teal" role="navigation">
         <div class="nav-wrapper container">
-            <a class="brand-logo" href="http://afitz.me" id="logo-container">aFitz.me</a>
+            <a class="brand-logo" href="http://afitz.space" id="logo-container">aFitz.space</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#" id="population">Population Growth</a></li>
                 <li><a href="#" id="africanamerican">African American</a></li>
@@ -58,7 +58,7 @@
             $("#graph").animate({
                 opacity: 0
             }, 1);
-            $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/population.html');
+            $("#graph").load('http://afitz.space/pages/LocalPopulationRace/graphs/population.html');
             $("#graph").animate({
                 opacity: 1
             }, 3000);
@@ -66,7 +66,7 @@
             $("#data").animate({
                 opacity: 0
             }, 1);
-            $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/population.html');
+            $("#data").load('http://afitz.space/pages/LocalPopulationRace/tables/population.html');
             $("#data").animate({
                 opacity: 1
             }, 3000);
@@ -74,18 +74,18 @@
         });
         $(document).ready(function() {
             $("#population").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/population.html');
-                $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/population.html');
+                $("#graph").load('http://afitz.space/pages/LocalPopulationRace/graphs/population.html');
+                $("#data").load('http://afitz.space/pages/LocalPopulationRace/tables/population.html');
                 $("#title").text('Population Growth');
             });
             $("#africanamerican").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/africanamerican.html');
-                $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/africanamerican.html');
+                $("#graph").load('http://afitz.space/pages/LocalPopulationRace/graphs/africanamerican.html');
+                $("#data").load('http://afitz.space/pages/LocalPopulationRace/tables/africanamerican.html');
                 $("#title").text('African American Population');
             });
             $("#hispanic").click(function() {
-                $("#graph").load('http://afitz.me/pages/LocalPopulationRace/graphs/hispanic.html');
-                $("#data").load('http://afitz.me/pages/LocalPopulationRace/tables/hispanic.html');
+                $("#graph").load('http://afitz.space/pages/LocalPopulationRace/graphs/hispanic.html');
+                $("#data").load('http://afitz.space/pages/LocalPopulationRace/tables/hispanic.html');
                 $("#title").text('Hispanic Population');
             });
         });
