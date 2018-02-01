@@ -1,5 +1,5 @@
 function loadLink() {
-	$.getJSON('http://anyorigin.com/go?url=https%3A//pastebin.com/archive&callback=?', function(data){
+	$.getJSON('https://anyorigin.com/go?url=https%3A//pastebin.com/archive&callback=?', function(data){
 				var html = $.parseHTML(data.contents);
 
 				var newestrow = $( data.contents ).find( "tr" ).eq(1);
@@ -16,7 +16,7 @@ function loadLink() {
 }
 
 function loadContent(newestlink) {
-	$.getJSON('http://anyorigin.com/go?url=https%3A//pastebin.com/raw' + newestlink + '&callback=?', function(data){
+	$.getJSON('https://anyorigin.com/go?url=https%3A//pastebin.com/raw' + newestlink + '&callback=?', function(data){
 				$('#queryResult').text(data.contents);
 			});
 }
