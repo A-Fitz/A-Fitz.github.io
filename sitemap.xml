@@ -9,7 +9,7 @@
 
 <url>
   <loc>http://afitz.space/</loc>
-  <lastmod>2018-01-26</lastmod>
+  <lastmod>2018-02-01</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.0</priority>
 </url>
@@ -17,7 +17,19 @@
   <loc>http://afitz.space/pages/DiscordTranslator</loc>
   <lastmod>2018-01-26</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://afitz.space/pages/LocalPopulationRace</loc>
+  <lastmod>2018-01-26</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://afitz.space/pages/How-Many-Puppers</loc>
+  <lastmod>2018-02-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
 </url>
 
 
