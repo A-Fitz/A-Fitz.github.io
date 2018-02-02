@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="50 Cent, Or BTC?- FitzGerald Development">
+  <meta name="author" content="Austin FitzGerald">
+
+  <title>50 Cent, Or BTC?</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <a class="link" href="https://afitz.space" target="_blank">My Site</a>
+  <div class="main-content">
+    <section id="photos">
+      <a>
+		<img src='50cent.png' alt='50 Cent, or BTC?'>
+
+		<p id="btc"></p>
+	  </a>
+    </section>
+  </div>
+  
+  <script>
+	$(document).ready(function() {
+		loadPrice();
+		setInterval(loadPrice, 5000);
+	});
+	
+	function loadPrice() {
+		$(function() {
+			$.getJSON('https://blockchain.info/tobtc?currency=USD&value=0.5&cors=true', function(data){
+					var number = parseFloat(data);   
+					var rounded = number.toFixed(8);
+					$("#btc").html(number);
+			});
+		});
+	}
+</script>
+</body>
+</html>

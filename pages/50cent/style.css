@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'St Transmission';
+    src: url('fonts/StTransmission-800ExtraBold.eot');
+    src: url('fonts/StTransmission-800ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/StTransmission-800ExtraBold.woff2') format('woff2'),
+        url('fonts/StTransmission-800ExtraBold.woff') format('woff'),
+        url('fonts/StTransmission-800ExtraBold.ttf') format('truetype'),
+        url('fonts/StTransmission-800ExtraBold.svg#StTransmission-800ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+html, body {
+	font-family: 'St Transmission';
+    font-weight: 800;
+    font-style: normal;
+	margin: 0;
+}
+
+.main-content {
+	font-family: 'St Transmission';
+    font-weight: 800;
+    font-style: normal;
+	padding-top: 5%;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+#photos {
+	margin: 0 auto;
+	max-width: 90%;
+	position: relative;
+}
+
+#photos a {
+	margin: 0 auto;
+	padding: 0;
+	text-decoration: none;
+}
+
+#photos img {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#photos p {
+	padding: 40% 0 0 42%;
+    position: absolute;
+    max-width: 100%;
+    font-family: 'St Transmission';
+    font-weight: 800;
+    font-style: normal;
+    color: #000;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.link {
+	padding: 5px;
+	color: #000;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+	color: #000;
+}
+
+.link:active {
+	color: #000;
+	text-decoration: none;
+}
+
+.link:visited {
+	color: #000;
+	text-decoration: none;
+}
