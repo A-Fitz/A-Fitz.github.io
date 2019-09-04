@@ -84,6 +84,16 @@ header .header__container {
   filter: invert(100%)
 }
 
+.social ul .github {
+  display: block;
+  text-indent: -9999px;
+  width: 4vh;
+  height: 4vh;
+  background: url(https://unicons.iconscout.com/release/v1.0.0/svg/github.svg);
+  background-size: 4vh 4vh;
+  filter: invert(100%)
+}
+
 .social ul .resume {
   display: block;
   text-indent: -9999px;
