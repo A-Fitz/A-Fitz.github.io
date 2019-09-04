@@ -43,7 +43,7 @@ header .header__container {
 	text-align: center;
 }
 
-.header__container img {
+.header__container .profile-img {
 	height: 25vh;
 	border-radius: 5px;
 }
