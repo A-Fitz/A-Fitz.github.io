@@ -141,7 +141,7 @@ header .header__container {
 	background-color: #F4F7F5;
 	color: #222222;
 	padding: 5px;
-	width: 95%;
+	width: 90%;
 	margin: 20px auto;
 }
 
@@ -155,6 +155,8 @@ header .header__container {
 }
 
 .col {
+	display: flex;
+	justify-content: center;
 	flex: 1;
 	margin: 2px;
 	padding: 10px;
@@ -186,7 +188,7 @@ header .header__container {
 
 .section {
   color: #666;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 2px;
   margin: 44px 0 24px;
@@ -194,7 +196,7 @@ header .header__container {
 }
 
 .item-name {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #222;
   font-weight: 600;
   margin-bottom: 4px;
@@ -207,7 +209,28 @@ header .header__container {
   font-weight: 600;
 }
 
+.item-name a:link, a:visited {
+  text-decoration: none;
+}
+
+.item-name a:hover, a:active {
+  text-decoration:underline;
+}
+
 .item-desc {
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 4px;
+}
+
+.item-desc a {
+  border-bottom: 0px;
+  color: #222222;
+}
+
+.item-desc a:link, a:visited {
+  text-decoration: none;
+}
+
+.item-desc a:hover, a:active {
+  text-decoration:underline;
 }
