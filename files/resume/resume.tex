@@ -1,0 +1,236 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+%
+% (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+%
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+% Template taken from https://latexresu.me/ and modified by Austin FitzGerald
+
+\documentclass[11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{2pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-4pt}}
+\newcommand{\resheading}[1]{
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-11pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\school}[3]{\vspace{1.5mm}
+  \textbf{#1} \hfill \textit{#2} \hfill #3
+}
+
+\newcommand{\job}[3]{\vspace{1.5mm}
+  \textbf{#1} \hfill #2 \linebreak \textit{#3}
+}
+
+\newcommand{\skill}[2]{
+  \textbf{#1:} #2
+}
+
+\newcommand{\organization}[3]{\vspace{1.5mm}
+  \textbf{#1} \hfill #2 \linebreak \textit{#3}
+}
+
+\newcommand{\award}[4]{ \vspace{1.5mm}
+  \textbf{#1} \hfill #2 \linebreak \textit{#3} #4
+}
+%-----------------------------------------------------------
+    \begin{document}
+    
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Austin FitzGerald} & 
+	\href{mailto:fitzgeralaus@uwplatt.edu}{fitzgeralaus@uwplatt.edu} | 
+	(630) 956-6602 | 
+	Lisle, IL | 
+	\href{https://afitz.space/}{AFitz.space}
+\end{tabular*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	
+	\item[]
+	      \school
+	      {University of Wisconsin - Platteville}
+	      {BS Software Engineering}
+	      {Sep. 2017 | May 2021}
+	      
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	\setlength\itemsep{0em}
+	\item[] \skill{Programming Languages}{C++, C\#, Java, JavaScript/TypeScript, Python}
+	\item[] \skill{JavaScript Frameworks}{Angular 2+, Bootstrap v3/v4, ChartJS, Materialize}
+	\item[] \skill{Markup Languages}{LaTeX, Markdown}
+	\item[] \skill{Databases}{PostgreSQL}
+	\item[] \skill{Operating Systems}{Windows, GNU/Linux, Android}
+	\item[] \skill{Software}{Excel, Git, JIRA, Photoshop, Wordpress}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	\item[]
+	      \award
+	      {Staff Member of the Semester}
+	      {Jan. 2020}
+	      {UW-Platteville Residence Life}
+	      {\\Recognized for outstanding achievement during Fall 2019 semester.}
+	\item[]
+	      \award
+	      {WSTS Poster Symposium Award}
+	      {July 2019}
+	      {WiSys}
+	      {\\Winner of second place in WiSys\textquotesingle{} annual celebration of research and innovation.}
+	\item[]
+	      \award
+	      {Academic Scholarship}
+	      {June 2019}
+	      {Lombard Lodge No. 1098 A.F. \& A.M.}
+	      {\\Recieved for service to school and community as well as strong potential for leadership.}
+	\item[]
+	      \award
+	      {Academic Scholarship}
+	      {May 2018}
+	      {SMTA Wisconsin Chapter}
+	      {\\Recognized for passion in the technical field of electronics.}
+	\item[]
+	      \award
+	      {Bug Bounty}
+	      {June 2017}
+	      {Securly}
+	      {\\Created and confidentially reported a serious exploit in a web filtering system.}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Organizations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	\item[]
+	      \organization
+	      {Association for Computing Machinery (ACM)}
+	      {Sep. 2018 | Present}
+	      {Student Member}
+	      {\\World\textquotesingle{}s largest scientific and educational computing society. Attendee of on campus meetings and events such as the 2018 and 2019 North Central NA Regional Contests for the ICPC.}
+	\item[]
+	      \organization
+	      {Westview Elementary 3rd \& 4th Grade Coding Club}
+	      {Sep. 2018 | Jan. 2020}
+	      {Volunteer Mentor}
+	      {\\Free coding club for 3rd and 4th grade students at Westview Elementary in Platteville, Wisconsin. Utilized the curriculum provided by Code.org and Google\textquotesingle{}s CS First.}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagebreak
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	\item[]
+	      \job
+	      {Nelnet}
+	      {June 2020 | Present}
+	      {Software Engineering Intern}
+	      \begin{itemize}
+	      	\item Currently learning how to provide enhancement and support of internal and external web-based applications.
+	      \end{itemize}
+	\item[]
+	      \job
+	      {UW-Platteville CSSE Department}
+	      {Sep. 2018 | May 2020}
+	      {Lab Assistant}
+	      \begin{itemize}
+	      	\item Employed to provide weekly lab assistance for students enrolled in Computer Science courses in a courteous and efficient manner. Experienced with policies of the Computer Science department in regards to code quality, assessment, and plagiarism. Trained and tested on The Family Educational Rights and Privacy Act of 1974 inorder to act as a liaison for the University.
+	      \end{itemize}
+	\item[]
+	      \job
+	      {UW-Platteville Residence Life}
+	      {Jan. 2019 | March 2020}
+	      {Resident Assistant}
+	      \begin{itemize}
+	      	\item Leadership position in a campus residence hall. Responsible for overseeing more than 25 undergraduate students, providing information on university resources, and developing an educational atmosphere.
+	      \end{itemize}
+	\item[]
+	      \job
+	      {UW-Platteville CSSE Department}
+	      {Sep. 2018 | Aug. 2019}
+	      {Undergraduate Researcher}
+	      \begin{itemize}
+	      	\item 1 out of 10 students from the university to receive the 2019 SUSP grant. Worked under Dr. Selent to research, design, and develop multiple predictive models used to predict student struggle in future CSSE courses.
+	      	\item Previously involved in multiple research groups under Dr. Alkhushayni. Primary group developed an Android application developed to be used for personal health data entry, storage, and analysis. Implemented a unique set of chronic disease risk assessments.
+	      \end{itemize}
+	\item[]
+	      \job
+	      {Perritt Capital Management}
+	      {July 2018 | Aug. 2018}
+	      {Intern}
+	      \begin{itemize}
+	      	\item In-office and remote data collection as well as analysis. Most work was done through Microsoft Excel. VBA macro creation for mass data formatting and chart creation
+	      \end{itemize}
+	\item[]
+	      \job
+	      {UW-Platteville Dining Services}
+	      {Sep. 2017 | Jan. 2018}
+	      {Student Employee}
+	      \begin{itemize}
+	      	\item Opening of multiple dining stations, including allergy-free food preparation. Followed guidelines for cooking to ensure quality meals and a safe environment for employees.
+	      \end{itemize}
+	\item[]
+	      \job
+	      {McDonald\textquotesingle{}s}
+	      {Feb. 2016 | Feb. 2017}
+	      {Crew Member}
+	      \begin{itemize}
+	      	\item Experience with multiple positions such as food preparation, cashiering, inventory management, dishwashing, and closing the restaurant. Developed time management skills to meet quick food preparation times. Balanced correspondence skills with customers, with attention to conflict prevention. Awarded Employee of the Month in April of 2016.
+	      \end{itemize}
+\end{itemize}
+\ 
+\end{document}
