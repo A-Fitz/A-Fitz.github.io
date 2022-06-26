@@ -20,6 +20,7 @@
 \usepackage{textcomp}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
 
 
 %-----------------------------------------------------------
@@ -77,12 +78,13 @@
 \newcommand{\organization}[3]{\vspace{1.5mm}
   \textbf{#1} \hfill #2 \linebreak \textit{#3}
 }
-
-\newcommand{\award}[4]{ \vspace{1.5mm}
-  \textbf{#1} \hfill #2 \linebreak \textit{#3} #4
-}
 %-----------------------------------------------------------
-    \begin{document}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.0pt}
+\fancyfoot[L]{Last Updated 06/26/2022}
+\pagestyle{fancy}
+
+\begin{document}
     
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{\LARGE Austin FitzGerald} & 
@@ -103,45 +105,57 @@
 	      
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Skills}
+\resheading{Technical Skill Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}[leftmargin=*]
 	\setlength\itemsep{0em}
-	\item[] \skill{Programming Languages}{C++, C\#, Java, JavaScript/TypeScript, Python, PHP}
-	\item[] \skill{JavaScript Frameworks}{Angular 2+}
+	\item[] \skill{Programming Languages}{Java, TypeScript, JavaScript, Python}
 	\item[] \skill{Markup Languages}{LaTeX, Markdown}
-	\item[] \skill{Databases}{PostgreSQL, SQL Server, DB2}
-	\item[] \skill{Operating Systems}{Windows, GNU/Linux, Android}
-	\item[] \skill{Software}{Excel, Git, Jira, BitBucket, Confluence, Bamboo, Photoshop, Wordpress}
+	\item[] \skill{Frameworks}{Angular 2+, AngularJS, Spring Framework}
+	\item[] \skill{Databases}{SQL Server, PostgreSQL}
+	\item[] \skill{Software}{Jira, BitBucket, Confluence, Bamboo, GitHub, GitLab, ServiceNow, SiteMinder, Excel, WebSphere 8.5/9}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Awards}
+\resheading{Work Experience}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}[leftmargin=*]
 	\item[]
-	      \award
-	      {Residence Life Awards}
-	      {2019-2021}
-	      {UW-Platteville Residence Life}
-	      {\\During my time working for Residence Life I was recognized as a Lifetime Award Winner, a Senior Assistant of The Semester, and a Staff Member of The Semester for Wilgus Hall.}
+	      \job
+	      {Nelnet (Madison, WI)}
+	      {Jun. 2021 | Present}
+	      {IT Software Engineer}
+	      \begin{itemize}
+	      	\item As a member of an eight-person Scrum team, I help maintain over twelve software systems while working remotely. Some of the systems have been newly-developed during my time, while others are legacy systems that mostly require production support and security updates. System technologies vary based on need and lifetime; I have gained some experience with AWS.
+                     \item I have improved our team's efficiency by advocating for and implementing automated code quality enforcement, proactive maintenance techniques, and procedures to streamline production implementations. I have also studied the enterprise risk management framework and external resources in order to improve the security engineering stature of development teams across the organization.
+                     \item I am a notable contributor to the \href{https://unifi.nelnet.io/}{Unifi Design System}. I began as a regular meeting attendee before transitioning into component development, which required active collaboration with UI/UX designers, accessibility engineers, and stakeholders. I then filled in to provide lead development and support during a staffing change, where I assisted with interviews and sharing knowledge with new hires.
+                     \item I regularly attend events regarding company culture, professional development, and innovation. I also acted as a mentor to an intern who spent between 15-20 hours per week on our team during the school year.
+	      \end{itemize}
 	\item[]
-	      \award
-	      {Academic Awards}
-	      {2017-2021}
-	      {SMTA Wisconsin Chapter}
-	      {\\Throughout my undergraduate years I received scholarships from the SMTA Wisconsin Chapter and Lombard Lodge No. 1098. I also received a research grant from my university.}	
+	      \job
+	      {UW-Platteville Residence Life (Platteville, WI)}
+	      {Jan. 2019 | May 2021}
+	      {Senior Assistant, Resident Assistant}
+	      \begin{itemize}
+	      	\item As a senior assistant I was responsible for coordinating administrative duties, health and safety protocols, and acting as a co-supervisor for seven resident assistants. I was voted by my peers as the \emph{Senior Assistant of the Semester} in the fall of 2020. I received the \emph{Lifetime Residence Life Award} in the spring of 2021.
+	      	\item As a resident assistant I was responsible for overseeing a community of approximately twenty-five undergraduate students, providing information on university resources, and developing an educational atmosphere. I was voted by my peers as the \emph{Staff Member of the Semester} in the fall of 2019.
+	      \end{itemize}
 	\item[]
-	      \award
-	      {WSTS Poster Symposium Award}
-	      {July 2019}
-	      {WiSys}
-	      {\\Winner of second place in WiSys\textquotesingle{} annual celebration of research and innovation.}
+	      \job
+	      {Nelnet (Madison, WI)}
+	      {Jun. 2020 | Aug. 2020}
+	      {IT Software Engineering Intern}
+	      \begin{itemize}
+	      	\item I learned how to perform duties related to the maintenance and enhancement of business continuity management systems within a ten-person Scrum team while working remotely.
+	      \end{itemize}
 	\item[]
-	      \award
-	      {Bug Bounty}
-	      {June 2017}
-	      {Securly}
-	      {\\Created and confidentially reported a serious exploit in a web filtering system.}
+	      \job
+	      {UW-Platteville CSSE Department (Platteville, WI)}
+	      {Sep. 2018 | May 2020}
+	      {Lab Assistant, Undergraduate Researcher}
+	      \begin{itemize}
+		\item As a lab assistant I provided support to students enrolled in introductory computer science courses, assisting them understand and complete assessments related to core concepts regarding data structures, algorithms, and object-oriented programming.
+	      	\item As an undergraduate researcher I worked in a team under Dr. Selent to research, design, and develop multiple predictive models used to predict student struggle in CSSE courses; our team won 2nd place in the 2019 WSTS Poster Symposium. I also worked under Dr. Alkhushayni to implement a unique set of chronic disease risk assessments for a personal health application.
+	      \end{itemize}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Organizations}
@@ -152,51 +166,14 @@
 	      {Association for Computing Machinery (ACM)}
 	      {Sep. 2018 | May 2021}
 	      {Student Member}
-	      {\\World\textquotesingle{}s largest scientific and educational computing society. Attendee of on campus meetings and events such as the 2018 and 2019 North Central NA Regional Contests for the ICPC.}
+	      {\\I was a regular attendee of on-campus meetings and events such as the 2018, 2019, and 2021 International Collegiate Programming Contests.}
 	\item[]
 	      \organization
 	      {Westview Elementary 3rd \& 4th Grade Coding Club}
 	      {Sep. 2018 | Jan. 2020}
 	      {Volunteer Mentor}
-	      {\\Free coding club for 3rd and 4th grade students at Westview Elementary in Platteville, Wisconsin. Utilized the curriculum provided by Code.org and Google\textquotesingle{}s CS First.}
+	      {\\I mentored 3rd and 4th grade students as part of a coding club at Westview Elementary in Platteville, Wisconsin. We utilized curriculum provided by Code.org and Google\textquotesingle{}s CS First.}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\pagebreak
-\resheading{Work Experience}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}[leftmargin=*]
-	\item[]
-	      \job
-	      {Nelnet}
-	      {June 2021 | Present}
-	      {IT Software Engineer}
-	\item[]
-		\job
-		{UW-Platteville Residence Life}
-		{Jan. 2019 | May 2021}
-		{Resident Assistant, Senior Assistant}
-		\begin{itemize}
-			\item As a Resident Assistant I was responsible for overseeing more than 25 undergraduate students, providing information on university resources, and developing an educational atmosphere.
-			\item As a Senior Assistant I was responsible for coordinating administrative duties, health and safety protocols, and acting as a supervisor for a staff of 7 Resident Assistants.
-		\end{itemize}
-	\item[]
-	      \job
-	      {Nelnet}
-	      {June 2020 | August 2020}
-	      {IT Software Engineering Intern}
-	      \begin{itemize}
-	      	\item Performed duties related to enhancement, support, and design of internal web-based applications for Business Continuity. Gained experience with build tools, application servers, accessibility frameworks, and methodologies used in a 10-person Agile team.
-	      \end{itemize}
-	\item[]
-	      \job
-	      {UW-Platteville CSSE Department}
-	      {Sep. 2018 | May 2020}
-	      {Lab Assistant, Undergraduate Researcher}
-	      \begin{itemize}
-		\item As a Lab Assistant I provided assistance to students enrolled in Computer Science courses in a courteous and efficient manner. Gained experience with policies regarding code quality, assessment, and plagiarism.
-	      	\item As an Undergraduate Researcher I worked under Dr. Selent to research, design, and develop multiple predictive models used to predict student struggle in future CSSE courses. I also worked under Dr. Alkhushayni to implement a unique set of chronic disease risk assessments for a personal health application.
-	      \end{itemize}
-\end{itemize}
 \ 
 \end{document}
