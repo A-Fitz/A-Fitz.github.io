@@ -34,14 +34,14 @@
 %-----------------------------------------------------------
 %Margin setup
 
-\setlength{\evensidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.40in}
 \setlength{\headheight}{0in}
 \setlength{\headsep}{0in}
-\setlength{\oddsidemargin}{-0.25in}
+\setlength{\oddsidemargin}{-0.40in}
 \setlength{\tabcolsep}{0in}
 \setlength{\textheight}{9.5in}
-\setlength{\textwidth}{7in}
-\setlength{\topmargin}{-0.3in}
+\setlength{\textwidth}{7.2in}
+\setlength{\topmargin}{-0.5in}
 \setlength{\topskip}{0in}
 \setlength{\voffset}{0.1in}
 
@@ -52,7 +52,7 @@
 \newcommand{\resheading}[1]{
   \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
     \begin{shaded}
-\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.962in][l]{\large #1} \vphantom{p\^{E}}}}}}
     \end{shaded}
   }\vspace{-11pt}
 }
@@ -78,20 +78,27 @@
 \newcommand{\organization}[3]{\vspace{1.5mm}
   \textbf{#1} \hfill #2 \linebreak \textit{#3}
 }
+
+\newcommand{\project}[3]{\vspace{1.5mm}
+  \textbf{#1} \hfill #2 #3
+}
+
 %-----------------------------------------------------------
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.0pt}
-\fancyfoot[L]{Last Updated 10/10/2023}
+\fancyfoot[L]{Last Updated 12/2023}
 \pagestyle{fancy}
 
 \begin{document}
     
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-	\textbf{\LARGE Austin FitzGerald} & 
-	\href{mailto:me@afitz.space}{me@afitz.space} | 
-	Aurora, IL | 
-	\href{https://afitz.space/}{https://afitz.space} |
-         IEEE \#99451128
+\begin{tabular*}{7.2in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Austin FitzCorbett} & 
+	\href{mailto:austin@fitzcorbett.com}{austin@fitzcorbett.com} - 
+	\href{https://fitzcorbett.com/}{https://fitzcorbett.com} - 
+	Aurora, IL
+\end{tabular*}
+\begin{tabular*}{7.2in}{l@{\extracolsep{\fill}}r}
+	\textbf{\textit{né} Austin FitzGerald}
 \end{tabular*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
@@ -102,10 +109,10 @@
 	      \school
 	      {University of Wisconsin - Platteville}
 	      {BS Software Engineering}
-	      {Sep. 2017 | May 2021}
+	      {09/2017 to 05/2021}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Technical Skill Summary}
+\resheading{Skills}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}[leftmargin=*]
 	\setlength\itemsep{0em}
@@ -113,7 +120,8 @@
 	\item[] \skill{Markup Languages}{LaTeX, Markdown, HTML}
 	\item[] \skill{Frameworks}{Angular 2+, AngularJS, Spring, .NET}
 	\item[] \skill{Databases}{SQL Server, PostgreSQL}
-	\item[] \skill{Software}{Jira, BitBucket, Confluence, Bamboo, GitHub, GitLab, ServiceNow, WebSphere, AWS}
+	\item[] \skill{Software}{Microsoft Office, Jira, BitBucket, Confluence, Bamboo, GitHub, GitLab, ServiceNow, WebSphere, AWS, SonarQube, Burp Suite}
+         	\item[] \skill{Industry}{Agile, Scrum, Machine Learning, WCAG Accessibility, CI/CD, Application Security, Risk Assessment}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Work Experience}
@@ -121,45 +129,39 @@
 \begin{itemize}[leftmargin=*]
 	\item[]
 	      \job
-	      {Nelnet (Remote \& Madison, WI)}
-	      {Aug. 2022 | Present}
-	      {IT Software Architect - Application Security}
-               {\\I work with approximately 50 IT delivery teams to improve the security posture of their supported systems by leading threat modeling, reviewing code, and assessing the risk of vulnerabilities reported by tools implemented at various SDLC touchpoints. I regularly read and write code in a variety of programming, scripting, and markup languages, including C\#, Java, JavaScript, TypeScript, and SQL. I spearhead our successful Security Champions Program that has over 70 members and architect its custom gamification platform. Along with stakeholders from throughout the organization, I design security and compliance training and maintain custom and off-the-shelf DevSecOps solutions. I regularly justify my decisions and risk assessments using the NIST SP 800 series as well as standards from sources such as the NIST SSDF, OWASP ASVS, and the CIS Controls.}
+	      {Nelnet (Remote)}
+	      {08/2022 to Present}
+	      {Software Architect - Application Security}
+               {\\I work with hundreds of software engineers and architects, managers, and cybersecurity analysts to improve the security posture of Nelnet systems by maintaining automated SAST and DAST implementations, maintaining artifact storage systems and automated supply chain risk assessment, leading threat modeling, and running our vulnerability management program. I regularly review C\#, Java, TypeScript, and SQL code for software systems that support our 16 million borrowers.\par
+I spearhead our successful Security Champions Program and architect its custom gamification platform (.NET/Angular/SQL-Server running on AWS EC2). Along with stakeholders from throughout the company, I design security and compliance training and ensure that our processes and systems are complaint with contractual and regulatory requirements. Everything I do can come under scrutiny by the Federal Student Aid office, so I am careful to regularly justify my decisions and risk assessments using the NIST SP 800 series and guidance from sources such as the NIST SSDF and the OWASP ASVS.}
 	\item[]
 	      \job
-	      {Nelnet (Remote \& Madison, WI)}
-	      {Jun. 2021 | Aug. 2022}
-	      {IT Software Engineer}
-	      \begin{itemize}
-	      	\item As a member of an eight-person Scrum team, I helped maintain >10 software systems while working remotely. Some of the systems were newly-developed during my time, while others were legacy systems. The system technologies varied based on need and lifetime; I gained some experience with AWS.
-                     \item I improved our team's efficiency by advocating for and implementing automated code quality enforcement, proactive maintenance techniques, and procedures to streamline production implementations. I also studied the enterprise risk management framework and external resources in order to improve the security engineering stature of the team.
-                     \item I was a notable contributor to the \href{https://unifi.nelnet.io/}{Unifi Design System}. I engaged in active collaboration with UI/UX designers, accessibility engineers, and stakeholders. I also filled in to provide lead development and support during a staffing change, where I assisted with interviews and sharing knowledge with new hires.
-                     \item I regularly attended events regarding company culture, professional development, and innovation. I also acted as a mentor to an intern who spent between 15-20 hours per week on our team during the school year.
-	      \end{itemize}
+	      {Nelnet (Remote)}
+	      {06/2021 to 08/2022}
+	      {Software Engineer}
+	      {\\I worked on a Scrum team that maintained over a dozen business critical software systems which supported internal and external stakeholders, including custom business continuity management software and a service that allowed Intuit Mint to collect federal student loan data on behalf of borrowers. I helped design, implement, and maintain five web applications (Spring/Angular/SQL Server) (<150k LoC each), leading the architecture of the last system we built. I also maintained software systems using technologies such as IBM Db2, AWS Lambda, the ServiceNow API, Helm, AngularJS, and WebSphere.\par
+I helped improve our team's productivity by advocating for and implementing automated code quality
+enforcement and procedures to streamline production deployments. I was a notable contributor to the Unifi Design System (https://unifi.nelnet.io/), where I engaged with UI/UX designers and accessibility engineers, then helped hire two developers to work on the project fulltime. I am also proud to have mentored an intern who was hired at Epic after graduation.}
 	\item[]
 	      \job
 	      {UW-Platteville Residence Life (Platteville, WI)}
-	      {Jan. 2019 | May 2021}
+	      {01/2019 to 05/2021}
 	      {Senior Assistant, Resident Assistant}
-	      \begin{itemize}
-	      	\item As a senior assistant I was responsible for coordinating administrative duties, health and safety protocols, and acting as a co-supervisor for seven resident assistants. I was voted by my peers as the \emph{Senior Assistant of the Semester} in the fall of 2020. I received the \emph{Lifetime Residence Life Award} in the spring of 2021.
-	      	\item As a resident assistant I was responsible for overseeing a community of approximately twenty-five undergraduate students, providing information on university resources, and developing an educational atmosphere. I was voted by my peers as the \emph{Staff Member of the Semester} in the fall of 2019.
-	      \end{itemize}
+	      {\\As a senior assistant I was responsible for coordinating administrative duties, health and safety protocols, and acting as a co-supervisor for seven resident assistants. I juggled 30 hours of work per week along with a full load of classes, earning a 3.87 GPA, Senior Assistant of the Semester in the fall of 2020, and the Lifetime Residence Life Award in the spring of 2021.\par
+As a resident assistant I was responsible for overseeing a community of approximately twenty-five undergraduate students, providing information on university resources, and developing an educational atmosphere. I was voted by my peers as the Staff Member of the Semester in the fall of 2019.}
 	\item[]
 	      \job
-	      {Nelnet (Remote \& Madison, WI)}
-	      {Jun. 2020 | Aug. 2020}
-	      {IT Software Engineering Intern}
-	      {\\I learned how to perform duties related to the maintenance and enhancement of business continuity management systems within a ten-person Scrum team while working remotely.}
+	      {Nelnet (Remote)}
+	      {06/2020 to 08/2020}
+	      {Software Engineering Intern}
+	      {\\See "Software Engineer" above, a position that became a continuation of this internship.}
 	\item[]
 	      \job
 	      {UW-Platteville CSSE Department (Platteville, WI)}
-	      {Sep. 2018 | May 2020}
+	      {09/2018 to 05/2020}
 	      {Lab Assistant, Undergraduate Researcher}
-	      \begin{itemize}
-		\item As a lab assistant I provided support to students enrolled in introductory computer science courses, assisting them understand and complete assessments related to core concepts regarding data structures, algorithms, and object-oriented programming.
-	      	\item As an undergraduate researcher I worked in a team under Dr. Selent to research, design, and develop multiple predictive models in Python used to predict student struggle in CSSE courses; our team won 2nd place in the 2019 WSTS Poster Symposium. I also worked under Dr. Alkhushayni to implement a unique set of chronic disease risk assessments for a personal health application.
-	      \end{itemize}
+	      {\\As a lab assistant I provided support to students enrolled in introductory computer science courses, assisting them understand and complete assessments related to core concepts regarding data structures, algorithms, and object-oriented programming.\par
+As an undergraduate researcher I worked in a team under Dr. Selent to research, design, and develop multiple predictive models in Python used to predict student struggle in CSSE courses; our team won 2nd place in the 2019 WSTS Poster Symposium. I also worked under Dr. Alkhushayni to implement a unique set of chronic disease risk assessments for a personal health application.}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Organizations}
@@ -167,16 +169,48 @@
 \begin{itemize}[leftmargin=*]
 	\item[]
 	      \organization
-	      {Association for Computing Machinery (ACM)}
-	      {Sep. 2018 | May 2021}
+	      {Institute of Electrical and Electronics Engineers}
+	      {06/2023 to Present}
+	      {Member}
+	      {\\IEEE Computer Society Member; Chicago Section; Member No. 99451128}
+	\item[]
+	      \organization
+	      {Kane County Clerk}
+	      {11/2022 to Present}
+	      {Election Judge}
+	      {\\I served as an Election Judge in Kane County, Illinois during the 11/2022 and 05/2023 elections.}
+	\item[]
+	      \organization
+	      {Association for Computing Machinery}
+	      {09/2018 to 05/2021}
 	      {Student Member}
 	      {\\I was a regular attendee of on-campus meetings and events such as the 2018, 2019, and 2021 International Collegiate Programming Contests.}
 	\item[]
 	      \organization
-	      {Westview Elementary 3rd \& 4th Grade Coding Club}
-	      {Sep. 2018 | Jan. 2020}
+	      {Westview Elementary Coding Club}
+	      {09/2018 to 03/2020}
 	      {Volunteer Mentor}
 	      {\\I mentored 3rd and 4th grade students as part of a coding club at Westview Elementary in Platteville, Wisconsin. We utilized curriculum provided by Code.org and Google\textquotesingle{}s CS First.}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projects and Publications}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}[leftmargin=*]
+	\item[]
+	      \project
+	      {\href{https://angular.unifi.nelnet.io/}{Nelnet Unifi Design System - Angular Library}}
+	      {06/2021 to Present}
+	      {\\I have made major contributions to the Angular library that implements Nelnet's "Unifi" Design System, which is used in dozens of customer-facing and internal-facing web applications including Nelnet's flagship loan servicing application used by 16 million borrowers (https://secure.nelnet.com/).}
+	\item[]
+	      \project
+	      {\href{https://www.researchgate.net/publication/349682373_Health_tracker_data_acquisition_and_analysis_for_monitoring_health_trends_and_assessing_disease_risk}{HealthTracker: Monitoring Health Trends and Assessing Disease Risk}}
+	      {08/2021}
+	      {\\I completed this research under Dr. Alkhushayni as an undergraduate at UW-Platteville. This paper describes HealthTracker, a mobile health application to record, store, display, and analyze personal health data. This application allows an individual to log several types of data encompassing their personal health. HealthTracker serves as a model for both a recording and a recommending system.}
+	\item[]
+	      \project
+	      {\href{https://afitz.space/files/2019_WSTS_Poster.pdf}{Applying Predictive Models to Course Curricula}}
+	      {07/2019}
+	      {\\I completed this research under Dr. Selent as an undergraduate at UW-Platteville. The purpose of our research was to provide data and tools necessary for students and faculty advisers to predict and prevent academic struggle. The dataset we used consists of historical grade data mined from UW-Platteville graduates and withdrawls between the years of 2013 and 2018. We used multiple predictive models to predict student success over a varying amount of time and compared the performance of these models.}
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \ 

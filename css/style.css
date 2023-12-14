@@ -52,12 +52,36 @@ header .header__container {
 	font-size: 4vh;
     font-weight: 200;
     margin-top: 2vh;
-    max-width: 45vw;
+    max-width: 50vw;
 	color: #F4F7F5; 
 }
 
 .header__container h1 .bold {
     font-weight: 600;
+}
+
+.header__container .subheader {
+	padding: 1vh 20vw 0;
+}
+
+.header__container .subheader p {
+	font-size: 2vh;
+	font-weight: 300;
+	color: #F4F7F5;
+}
+
+.header__container .subheader p a {
+	border-bottom: 0px;
+	color: #F4F7F5;
+	font-weight: 400;
+}
+
+.header__container .subheader p a:link, a:visited {
+	text-decoration: none;
+}
+
+.header__container .subheader p a:hover, a:active {
+	text-decoration:underline;
 }
 
 .header__container .social {
